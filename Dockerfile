@@ -2,8 +2,7 @@ FROM arm32v7/python:3.6-slim-stretch
 
 MAINTAINER Vithar Me <vithar@vithar.me>
 
-RUN apt-get update && apt-get upgrade -y && apt-get install -y
-RUN apt-get install -y --fix-missing \
+RUN apt-get update && apt-get upgrade -y && apt-get install -y --fix-missing \
     build-essential \
     cmake \
     gfortran \
